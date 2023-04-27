@@ -26,22 +26,24 @@
     <article class="markdown-body" id="content"></article>
 
     <script>
-        // Fetch the markdown file and display it as HTML
-        fetch('wiki.md')
-            .then(response => {
-                if (response.ok) {
-                    return response.text();
-                } else {
-                    throw new Error('Failed to fetch wiki.md');
-                }
-            })
-            .then(markdown => {
-                const html = marked(markdown);
-                document.getElementById('content').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+        document.addEventListener("DOMContentLoaded", () => {
+            // Fetch the markdown file and display it as HTML
+            fetch('wiki.md')
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Failed to fetch wiki.md');
+                    }
+                })
+                .then(markdown => {
+                    const html = marked(markdown);
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
     </script>
 </body>
 </html>
