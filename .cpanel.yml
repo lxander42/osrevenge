@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dkndr6aqy52d/public_html/
-    - /bin/cp OSRevenge $DEPLOYPATH
+    - /bin/cp -r OSRevenge $DEPLOYPATH # Copy the OSRevenge folder to the public_html folder
   
