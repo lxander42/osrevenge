@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/dkndr6aqy52d/public_html/
     - /bin/rm -r $DEPLOYPATH*
-    #- /bin/cp -a OSRevenge/dist/osrevenge/. $DEPLOYPATH 
+    - /bin/cp -a OSRevenge/dist/osrevenge/. $DEPLOYPATH 
   
