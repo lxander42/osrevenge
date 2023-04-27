@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/dkndr6aqy52d/public_html/
     - /bin/rm -r !(cgi-bin)
-    - /bin/cp -a OSRevenge/dist/. $DEPLOYPATH # Copy the OSRevenge folder to the public_html folder
+    - /bin/cp -a /OSRevenge/dist/osrevenge/. $DEPLOYPATH # Copy the OSRevenge folder to the public_html folder
   
