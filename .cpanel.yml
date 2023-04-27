@@ -6,4 +6,5 @@ deployment:
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp gittest.html $DEPLOYPATH
     - /bin/cp wiki.html $DEPLOYPATH
+    - /bin/cp wikimd.html $DEPLOYPATH
   

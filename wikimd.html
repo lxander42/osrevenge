@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display wiki.md</title>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <style>
+            /* Optional: Add any CSS styling you'd like for your content */
+            .content {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./partsearch.html">Part Search</a>
+            <a href="./partnaming.html">Part Naming</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./partsample.html">sample drawing</a>
+            <a href="./gittest.html">git test</a>
+            <!-- add a wiki section -->
+            <a href="./wiki.html">wiki</a>
+            <!-- add a wikimd section -->
+            <a href="./wikimd.html">wikimd</a>
+        </nav>
+        <div class="content" id="content"></div>
+
+        <script>
+            // Fetch the markdown file and display it as HTML
+            fetch('wiki.md')
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Failed to fetch wiki.md');
+                    }
+                })
+                .then(markdown => {
+                    const html = marked(markdown);
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        </script>
+    </body>
+</html>
