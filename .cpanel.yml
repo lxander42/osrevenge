@@ -7,4 +7,5 @@ deployment:
     - /bin/cp gittest.html $DEPLOYPATH
     - /bin/cp wiki.html $DEPLOYPATH
     - /bin/cp wikimd.html $DEPLOYPATH
+    - /bin/cp wiki.md $DEPLOYPATH
   
