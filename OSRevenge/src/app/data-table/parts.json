@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "partNumber": "323-123141-123",
+    "material": "aluminum",
+    "category": "bracket"
+  },
+  {
+    "id": 2,
+    "partNumber": "898-237871-898",
+    "material": "inconel",
+    "category": "nozzle"
+  },
+  {
+    "id": 3,
+    "partNumber": "123-123123-123",
+    "material": "steel",
+    "category": "bracket"
+  },
+  {
+    "id": 4,
+    "partNumber": "123-123313-123",
+    "material": "aluminum",
+    "category": "hinge"
+  },
+  {
+    "id": 5,
+    "partNumber": "455-323313-123",
+    "material": "ceramic",
+    "category": "pin"
+  }
+]

@@ -1,0 +1,23 @@
+<div class="container border border-2 bg-slate-200">
+
+  <h1> Part data</h1>
+
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>Part Number</th>
+          <th>Material</th>
+          <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Part of parts" class="border border-2 bg-emerald-200">
+        <td>{{ Part.id }}</td>
+        <td>{{ Part.partNumber }}</td>
+        <td>{{ Part.material }}</td>
+        <td>{{ Part.category }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
