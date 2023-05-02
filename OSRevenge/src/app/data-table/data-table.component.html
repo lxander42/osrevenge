@@ -1,22 +1,38 @@
-<div class="container border border-2 bg-slate-200">
+<div>
 
-  <h1> Part data</h1>
+  <h4 class="text-xl text-slate-700 font-roboto font-extrabold">Part Database</h4>
 
-  <table class="table table-striped">
+  <table class="table-auto border-separate border-spacing-x-0.5 border-spacing-y-1">
     <thead>
-        <tr>
-          <th>ID</th>
-          <th>Part Number</th>
-          <th>Material</th>
-          <th>Category</th>
+        <tr class="space-x-0.5">
+          <th class="bg-emerald-400 px-4 border-2 border-slate-900">
+            <h2 class="text-3xl text-slate-900 font-roboto font-extrabold">ID</h2>
+          </th>
+          <th class="bg-emerald-400 px-4 border-2 border-slate-900">
+            <h2 class="text-3xl text-slate-900 font-roboto font-extrabold">Part Number</h2>
+          </th>
+          <th class="bg-emerald-400 px-4 border-2 border-slate-900">
+            <h2 class="text-3xl text-slate-900 font-roboto font-extrabold">Material</h2>
+          </th>
+          <th class="bg-emerald-400 px-4 border-2 border-slate-900">
+            <h2 class="text-3xl text-slate-900 font-roboto font-extrabold">Category</h2>
+          </th>
         </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let Part of parts" class="border border-2 bg-emerald-200">
-        <td>{{ Part.id }}</td>
-        <td>{{ Part.partNumber }}</td>
-        <td>{{ Part.material }}</td>
-        <td>{{ Part.category }}</td>
+      <tr *ngFor="let Part of parts" class="opacity-50 hover:opacity-100 hover:drop-shadow-lg even:bg-emerald-300 odd:bg-slate-300">
+        <td>
+          <h5 class="text-lg text-center font-roboto font-extrabold">{{ Part.id }}</h5>
+        </td>
+        <td>
+          <h5 class="text-lg text-center font-roboto font-extrabold">{{ Part.partNumber }}</h5>
+        </td>
+        <td>
+          <h5 class="text-lg text-center font-roboto font-extrabold">{{ Part.material }}</h5>
+        </td>
+        <td>
+          <h5 class="text-lg text-center font-roboto font-extrabold">{{ Part.category }}</h5>
+        </td>
       </tr>
     </tbody>
   </table>
