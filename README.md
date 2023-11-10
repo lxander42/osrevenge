@@ -1,5 +1,7 @@
 # osrevenge
-A website for open source reverse engineering of mechanical components.
+A website for open source reverse engineering of mechanical components. http://osrevenge.com/
+
+Warning: I am a mechanical engineer who hasn't quite gotten the hang of web development or SSL integration so no https for now. Sorry :/
 
 The idea behind this is to create a framework similar to the software development cycle for mechanical parts using the principles of Atomic Mechanical Design. In completion, I want this website to be a one stop shop for mechanical engineers and designers that want to find technical data on OEM and custom parts. There will be a bounty system where people can request reverse engineering of components and all software used to generate drawings and CAD models will be free and open source. It is high time we democratize Mechanical Engineering.
 
